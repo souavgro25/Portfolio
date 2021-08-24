@@ -7,6 +7,7 @@ module.exports = {
         wiggle: "wiggle 3s ease-in-out ",
         fadeleft: "fadeleft 3s ease-in-out",
         faderight: "faderight 3s ease-in-out",
+        faderightfast: "faderightfast 2s ease-in-out",
       },
       keyframes: {
         wiggle: {
@@ -25,6 +26,12 @@ module.exports = {
           "0%": { opacity: 0, transform: "translatex(10px)" },
 
           "50%": { opacity: 0.2, transform: "translatex(-10px)" },
+          "100%": { opacity: 1, transform: "translate(0)" },
+        },
+        faderightfast: {
+          "0%": { opacity: 0, transform: "translatex(10px)" },
+
+          "50%": { opacity: 0.8, transform: "translatex(0)" },
           "100%": { opacity: 1, transform: "translate(0)" },
         },
       },

@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 function Dropdown({ isopen }) {
   return (
     <div className={isopen ? `md:hidden ` : "hidden"}>
-      <ul className="animate-wiggle flex flex-col justify-center items-center gap-y-5  bg-gray-800 py-10">
+      <ul className="animate-faderightfast flex flex-col justify-center items-center gap-y-5  bg-gray-800 py-10">
         <Link to="About" smooth={true} duration={500}>
           <li className="text-white font-normal text-sm hover:text-green-400 ">
             About
